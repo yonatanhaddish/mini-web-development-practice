@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marathon Registration Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Marathon Registration Form</h1>
+    </header>
+    <p>
+      Runners who are running in a marathon can register for a marathon through
+      a marathon registration form below.<b
+        >Registration will close soon. Hurry up.
+      </b>
+    </p>
+    <form>
+        <!-- First Name: -->
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" />
+        <br><br>
+        <!-- Last Name -->
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname">
+        <br><br>
+        <!-- Email ID: -->
+        <label for="email">Email Id:</label>
+        <input type="text" id="email" name="email" required>
+        <br><br>
+        <!-- Phone Number -->
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" placeholder="123-45-678">
+        <br><br>
+        <!-- Medical Discomfort: -->
+        <label for="question">Do you have any medical discomfort?</label>
+        <input type="radio" id="yes" name="question" value="Yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="question" value="No">
+        <label for="no">No</label>
+        <br><br>
+        <!-- Gender -->
+        <label for="gender">Gender</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+        <!-- Rate your running skills: -->
+        <label for="skills">Could you rate your running skills?</label>
+        <input type="range" min="1" max="10" value="0" class="slider" id="skills">
+        <br><br>
+        <!-- Emergency Contact Address -->
+        <label for="address">Emergency Contact</label>
+        <input type="text" id="address" name="address">
+        <br><br>
+        <!-- Street Address -->
+        <label for="street">Street Address</label>
+        <input type="text" id="street" name="street">
+        <br><br>
+        <!-- City -->
+        <label for="city">City</label>
+        <select name="city" id="city">
+            <option value="">Select</option>
+            <option value="London">London</option>
+            <option value="NewYork">NewYork</option>
+            <option value="NewDelhi">NewDelhi</option>
+            <option value="LuckNow">LuckNow</option>
+        </select>
+        <br><br>
+        <!-- State -->
+        <label for="state">State</label>
+        <select name="state" id="state">
+            <option value="">Select</option>
+            <option value="DC">DC</option>
+            <option value="Texas">Texas</option>
+            <option value="UP">UP</option>
+            <option value="NorthCarolina">NorthCarolina</option>
+        </select>
+        <!-- Postal/Zip Code -->
+        <label for="postal-code">Postal / Zip Code</label>
+        <input type="text" id="postal-code" name="postal-code">
+        <br><br>
+        <!-- Select Photo -->
+        <label for="photo">Select photo:</label>
+        <input type="file" id="photo" name="photo" multiple>
+        <br><br>
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
