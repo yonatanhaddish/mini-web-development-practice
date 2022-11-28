@@ -184,3 +184,94 @@
 // const doubleNumbers = numbers.map((num) => num * 2);
 // console.log("numbers", numbers);
 // console.log("doubleNumbers", doubleNumbers);
+
+// ================================================================================================
+// // OOP in Javascript
+// class Customer {
+//     constructor(firstName, lastName) {
+//         let firstname = firstName;
+//         let lastname = lastName;
+//         this.getName = function() {
+//             return(`The customer's first name is ${firstname}, and their last name is: ${lastname}`);
+//         }
+//     }
+// }
+// let newCustomer = new Customer('John', 'Doe');
+// console.log(newCustomer.getName());
+
+// ================================================================================================
+// // Set
+// const accounts = new Set();
+
+// accounts.add("checking");
+// accounts.add("savings");
+// accounts.add("credit card");
+// accounts.add("tobeDeletedTest")
+// console.log("After adding three items: ", accounts); // prints array before deleted an item.
+
+// accounts.delete("tobeDeletedTest");
+
+// console.log(accounts); // prints array after .delete method is called.
+
+// -------------------------------------------------------------------------------------------------
+// let numArray = [1, 1, 1, 1, 2, 2, 2, 2, 7, 8, 9]
+
+// let numSet = new Set(numArray)
+
+// console.log("Here is numArray: ", numArray);
+// console.log("Here is numSet: ", numSet);
+
+// console.log("NumArray length: ", numArray.length);
+// console.log("NumSet length: ", numSet.size);
+
+// ================================================================================================
+
+// // Promise.all
+// Promise.all([promise1, promise2])
+//     .then(([promise1Result, promise2Result]) => console.log('Results', promise1Result, promise2Result))
+
+// ================================================================================================
+// // Map
+// let map = new Map();
+
+// map.set("name", "John");
+// map.set("age", 28);
+// map.set("website", "hurix");
+// map.set("location", "London");
+
+// console.log(map);
+
+// ================================================================================================
+
+class Employee {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    getEmployeeDetails() {
+        return "Name: " + this.name + " and Age: " + this.age;
+        // return "Name: " + name + " and Age: " + age;
+    }
+}
+
+const empObject = new Employee("David", 29);
+console.log(empObject.getEmployeeDetails());
+
+var promise = new Promise(function(resolve, reject) {
+    if(Math.random() > 0) {
+        resolve();
+    }
+    else {
+        reject();
+    }
+});
+promise.
+    then(() => {
+        console.log('Success, Promise resolved');
+    })
+    .catch(() => {
+        console.log('Some error has occurred');
+    });
+
+// ================================================================================================
